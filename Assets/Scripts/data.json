@@ -1,0 +1,126 @@
+{
+          "consumption": {
+            "ethicalConsumer": "ethicalConsumer3",
+            "qualityConsumer": "qualityConsumer3",
+            "repairConsumer": "repairConsumer3",
+            "serviceConsumer": "serviceConsumer3",
+            "wasteConsumer": "wasteConsumer3",
+            "yearlyDonationAmount": 400
+          },
+          "energy": {
+            "dishWasher": "dishWasher2",
+            "energySaver": "energySaver4",
+            "heatSource": "heatSource5",
+            "heatSourceWood": "heatSourceWood2",
+            "heatedArea": "heatedArea3",
+            "hotWater": "hotWater4",
+            "indoorTemp": "indoorTemp3",
+            "ledLights": "ledLights3",
+            "lightsOff": "lightsOff3",
+            "renovateLevel": "renovateLevel4",
+            "showerFreq": 5,
+            "showerLength": 12,
+            "showerType": "showerType2",
+            "tumbleDrier": "tumbleDrier3"
+          },
+          "food": {
+            "dairyAmount": "dairyAmount4",
+            "dietAmount": "dietAmount2",
+            "foodWaste": "foodWaste3",
+            "meatConsumption": "meatConsumption4"
+          },
+          "household": {
+            "city": "",
+            "income": "1050000",
+            "members": {
+              "adults": 2,
+              "children": 0
+            },
+            "name": "",
+            "sqm": "80",
+            "type": "apartment",
+            "zipCode": ""
+          },
+          "transport": {
+            "boatTrips": 0,
+            "carTrips": {
+              "europe": 0,
+              "regional": 4,
+              "scandinavia": 0
+            },
+            "distanceWork": 10,
+            "flightTrips": {
+              "europe": 2,
+              "global": 0,
+              "scandinavia": 5
+            },
+            "publicTrips": {
+              "europe": 0,
+              "regional": 2,
+              "scandinavia": 0
+            },
+            "socialKm": {
+              "coDrive": "7",
+              "public": 120,
+              "vehicleElectric": 0,
+              "vehicleFossil": 0,
+              "vehicleHybrid": 0,
+              "vehicleMotorbike": 0,
+              "vehicleShared": 0
+            },
+            "vehicles": {
+              "electric": 0,
+              "fossil": 0,
+              "hybrid": 0,
+              "motorbike": 0
+            },
+            "workFreq": {
+              "coDrive": 0,
+              "public": 5,
+              "vehicleElectric": 0,
+              "vehicleFossil": 0,
+              "vehicleHybrid": 0,
+              "vehicleMotorbike": 0,
+              "vehicleShared": 0
+            }
+          }
+        },
+
+
+{
+  "household": {
+    "sqm": 70,
+    "income": 700000,
+    "type": "apartment",
+    "members": {
+      "adults": 2,
+      "children": 0
+    }
+  },
+  "energy": {
+    "heatSource": "heatSource2",
+    "renovateLevel": "renovateLevel4"
+  },
+  "transport": {
+    "distanceWork": 5,
+    "workFrequency": {
+      "public": 0,
+      "coDrive": 0,
+      "vehicleShared": 0,
+      "vehicleElectric": 1,
+      "vehicleFossil": 3,
+      "vehicleHybrid": 0,
+      "vehicleMotorbike": 0
+    },
+    "socialKm": {
+      "public": 0,
+      "socialCo": 0,
+      "vehicleElectric": 0,
+      "vehicleHybrid": 0,
+      "vehicleFossil": 0,
+      "vehicleMotorbike": 0,
+      "vehicleShared": 0
+    }
+  }
+}
+
