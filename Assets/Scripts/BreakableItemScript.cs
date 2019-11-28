@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class BreakableItemScript : MonoBehaviour
@@ -18,7 +19,7 @@ public class BreakableItemScript : MonoBehaviour
     public AudioClip stage2Sound;
     public AudioClip stage3Sound;
     public AudioClip destroySound;
-
+    public UnityEvent alarm;
     public bool endGame;
 
 
@@ -59,6 +60,7 @@ public class BreakableItemScript : MonoBehaviour
 
     }
 
+    //TODO: Find a bit more elegant solution to this
     private void ChangeItemBasedOnHealth()
     {
         if (itemHealth > (_maxHealth / 3)&& itemHealth <= (_maxHealth / 3 * 2))
@@ -83,11 +85,9 @@ public class BreakableItemScript : MonoBehaviour
         } else if (CheckIfCanDestroyItem())
         {
             Explode(gameObject);
-            if (endGame)
-            {
-                StartCoroutine(RestartSceneAfterDuration(1f));
 
-            }
+            if (!endGame) return;
+            alarm.Invoke();
         }
         else
         {
@@ -125,13 +125,6 @@ public class BreakableItemScript : MonoBehaviour
         StartCoroutine(StopVibrate(duration));
     }
 
-    private IEnumerator RestartSceneAfterDuration(float duration)
-    {
-        Debug.Log("restarting");
-
-        yield return new WaitForSeconds(duration);
-        SceneManager.LoadScene("SampleScene");
-    }
     private IEnumerator StopVibrate(float duration)
     {
         yield return new WaitForSeconds(duration);

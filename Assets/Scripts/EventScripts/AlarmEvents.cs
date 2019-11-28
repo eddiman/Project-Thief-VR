@@ -12,7 +12,7 @@ namespace EventScripts
 
             foreach (var alarm in lights)
             {
-                alarm.GetComponent<Light>().intensity = .5f;
+                alarm.GetComponent<Light>().intensity = 1f;
             }
         }
 
@@ -24,6 +24,16 @@ namespace EventScripts
             {
                 alarm.GetComponent<AudioSource>().Play();
             }
+        }
+
+        public void RestartScene()
+        {
+            StartCoroutine(RestartSceneAfterDuration(5f));
+        }
+        private IEnumerator RestartSceneAfterDuration(float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
     }
