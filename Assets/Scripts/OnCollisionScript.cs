@@ -13,7 +13,7 @@ public class OnCollisionScript : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other){
 
-        if (!other.gameObject.CompareTag("MainCamera") && !other.gameObject.CompareTag("StolenItem") ) return;
+        if (!other.gameObject.CompareTag("MainCamera") && !other.gameObject.CompareTag("StolenItem") && !other.gameObject.CompareTag("ItemBreaker") ) return;
 
         //If object is set to "break up" on onTriggerEnter, like the dino, remember dino?
         if (setRigidBodyKinematicWhenCollide && GetComponent<Rigidbody>() != null)

@@ -8,6 +8,8 @@ TagManager:
   - StolenItem
   - WallTrigger
   - AlarmLight
+  - KeyCard
+  - ItemBreaker
   layers:
   - Default
   - TransparentFX
