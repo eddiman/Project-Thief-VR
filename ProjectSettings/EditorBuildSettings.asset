@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/museum.unity
     guid: dae1fedaefc2e4ade903cd66ee579adf
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/SampleScene1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 4e3c213b6e9e61c4da17b7c73e2e0660
   m_configObjects: {}
